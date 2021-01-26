@@ -5,7 +5,15 @@
         <meta charset="utf-8">
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-        <h1>Minha Página</h1>
+    <body onload="load()">
+        <button type="button" onclick="botao()">Clique aqui</button>
+        <h3 id="agradecimento" onclick="redirecionar()"></h3>
+        <h3 id="mouseover" onmouseover="msov(this)" onmouseout="voltar(this)">Passe o mouse aqui</h3>
+        <h3 id="mouseover2" onmouseover="msov(this)" onmouseout="voltar(this)">Passe o mouse aqui</h3>
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
     </body>
 </html>
